@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="1008" pageHeight="612" orientation="Landscape" columnWidth="968" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="29c52aef-5886-4a11-900c-b68d28c2f782">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="305"/>
+	<property name="ireport.y" value="4"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     arfrvi_penjualan.`arf_kd_trans`,
+     arfrvi_penjualan.`arf_tgl_trans`,
+     arfrvi_penjualan.`arf_kd_brg`,
+     arfrvi_penjualan.`arf_jml`,
+     arfrvi_penjualan.`arf_kd_peg`,
+     arfrvi_penjualan.`arf_tot_hrg`
+FROM
+     `arfrvi_penjualan` arfrvi_penjualan]]>
+	</queryString>
+	<field name="arf_kd_trans" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="arf_tgl_trans" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="arf_kd_brg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="arf_jml" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="arf_kd_peg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="arf_tot_hrg" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="arf_kd_trans">
+		<groupExpression><![CDATA[$F{arf_kd_trans}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="968" height="32" uuid="1a36749a-0963-4d24-be6a-b15997ef4886"/>
+				<textElement textAlignment="Center">
+					<font fontName="Schadow BT" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Toko Lengkap UTI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="32" width="968" height="20" uuid="98a32fe0-819b-4e81-847e-18a4c71ea2f3"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. Singa No 60, Kedaton, Bandar Lampung]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="52" width="968" height="20" uuid="ddb62615-7920-489b-99b7-27fcc10f07d3"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Web : TokoKenokrat.ac.id Email : teknokrat@teknokrat.ac.id Telp (+62) 89629133147]]></text>
+			</staticText>
+			<image>
+				<reportElement x="155" y="0" width="95" height="75" uuid="4d187856-eadb-4572-9c85-77347d19df7a"/>
+				<imageExpression><![CDATA["D:\\MUHAMMAD ARIF RIVAI\\UNIVERSITASTEKNOKRAT.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="3" width="968" height="32" uuid="01c39be1-cf94-4360-8866-a78135832709"/>
+				<textElement textAlignment="Center">
+					<font fontName="Schadow BT" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Tabel Penjualan]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="0" width="967" height="1" uuid="2945121a-9130-46ad-9466-1c01d0f1b659"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<rectangle>
+				<reportElement x="228" y="0" width="69" height="37" uuid="2274bca9-7fe5-4328-a442-565ad4af873f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="297" y="0" width="111" height="37" uuid="63286e3b-5aad-40e9-a8b1-f5a64630fe6c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="408" y="0" width="69" height="37" uuid="b1386f71-ff30-4548-b9a1-911601a50123"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="477" y="0" width="69" height="37" uuid="048d9ce3-621a-4685-a3a8-fbbfca313248"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="546" y="0" width="69" height="37" uuid="0331d027-82a8-435a-b6a0-268d21e2d929"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="615" y="0" width="124" height="37" uuid="a3f8f6ac-4d39-4938-bf36-413d4992f0eb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="228" y="0" width="69" height="37" uuid="2942af01-9d2c-47e4-b2ec-50c46721639b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Kode Transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="297" y="0" width="111" height="37" uuid="743469a9-9984-42d5-b442-071f7f652aab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Tanggal Transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="408" y="0" width="69" height="37" uuid="6dc3d4a1-a5b2-4818-82d9-e5682cb43557"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Kode Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="477" y="0" width="69" height="37" uuid="0dca8536-9afd-40d5-b6e9-2bde1d352583"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Jumlah Beli]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="551" y="0" width="59" height="37" uuid="c8f88075-3b18-47d2-8a47-9ca518ddf603"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Kode Pegawai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="615" y="0" width="124" height="37" uuid="525fe134-ce28-440c-8cf4-3991df2c7dff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Total Harga]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="228" y="0" width="69" height="20" uuid="b3a53dcf-9bed-445b-a559-ae0cf04a08f7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="297" y="0" width="111" height="20" uuid="4ea7edb6-69d4-44c1-ad29-d3e44699f199"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="408" y="0" width="69" height="20" uuid="e1ff626d-41cc-4c90-9722-1fcc77795682"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="477" y="0" width="69" height="20" uuid="c66ec7fd-d1b6-438a-8db1-e53bbff318b5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="546" y="0" width="69" height="20" uuid="77d36c77-b97c-465b-8b4d-4162cb2a85f5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="615" y="0" width="124" height="20" uuid="7eb3c178-2816-47b9-a67e-f8848a6085c2"/>
+			</rectangle>
+			<textField>
+				<reportElement x="235" y="0" width="57" height="20" uuid="47213ab2-4a3b-43a1-9238-b587e2fb2c36"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{arf_kd_trans}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="303" y="0" width="99" height="20" uuid="56108153-88df-4a01-aa94-2106179963fb"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{arf_tgl_trans}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="0" width="69" height="20" uuid="07bd1cbc-a5f5-4e11-b1cb-3247b866fbbf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{arf_kd_brg}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0">
+				<reportElement x="483" y="0" width="63" height="20" uuid="550efd47-c6d5-4263-8378-54bac2166e1a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{arf_jml}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="546" y="0" width="69" height="20" uuid="f52eabfb-5dbc-4b40-b944-ea7fa8334421"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{arf_kd_peg}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement x="623" y="0" width="109" height="20" uuid="a25d9a2b-6adc-4bed-a4d1-cfa0c3b73f1d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{arf_tot_hrg}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

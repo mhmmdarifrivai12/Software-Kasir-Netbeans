@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cc4f5636-5f0d-440b-b28a-b388d3f6a484">
+	<property name="ireport.zoom" value="1.000000000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     arfrvi_barang.`kd_brg`,
+     arfrvi_barang.`nm_brg`,
+     arfrvi_barang.`diskon`,
+     arfrvi_barang.`hrg_jual`,
+     arfrvi_barang.`jumlah`,
+     arfrvi_barang.`rusak`,
+     arfrvi_barang.`sisa`
+FROM
+     `arfrvi_barang` arfrvi_barang]]>
+	</queryString>
+	<field name="kd_brg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nm_brg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="diskon" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hrg_jual" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlah" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rusak" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sisa" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="kd_brg">
+		<groupExpression><![CDATA[$F{kd_brg}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="140" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="32" uuid="24e90131-5c91-4e2f-b957-72dcbe4eb405"/>
+				<textElement textAlignment="Center">
+					<font fontName="Schadow BT" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Toko Kelontongan Xyz]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="32" width="555" height="20" uuid="18d9d42e-143a-47f1-876f-8a72742fa4e4"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. Singa No 60, Kedaton, Bandar Lampung]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="52" width="555" height="20" uuid="2c52e53e-97be-4725-a990-3f56365fb429"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Web : Kelontongan.ac.id Email : Kelontongan@gmail.com Telp (+62) 89629133147]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="76" width="555" height="32" uuid="d906df2c-8409-4ab9-b081-99be9dd8277b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Schadow BT" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lampung]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="75" width="555" height="1" uuid="2a98586b-e808-4668-9c16-abbb202910c7"/>
+			</line>
+			<line>
+				<reportElement x="0" y="139" width="555" height="1" uuid="0bb77374-bbf0-47be-ae70-5349ec9f9665"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="108" width="555" height="32" uuid="6ce66d2a-b2bb-4a17-a08d-7ab713b73440"/>
+				<textElement textAlignment="Center">
+					<font fontName="Schadow BT" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN TABEL BARANG]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="20" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="77" height="20" uuid="c9b17bb0-d54b-48d5-bd08-feef55c2d72a"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[KODE BARANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="107" y="0" width="77" height="20" uuid="3d16023c-32f2-44b8-9b0a-91fb9de1b6ac"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[NAMA BARANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="215" y="0" width="69" height="20" uuid="0f916e3c-65cd-412f-aec4-720110a3787b"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[DISKON]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="0" width="70" height="20" uuid="9fcf4893-55f8-430e-ade3-e5f5cb50be86"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[HARGA JUAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="62" height="20" uuid="e9aafcb3-1c82-41c8-9a53-4bb20b78b763"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[JUMLAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="501" y="2" width="54" height="18" uuid="ea1d32b3-773c-425c-b346-cf6f7b309f31"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[RUSAK]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<textField>
+				<reportElement x="107" y="6" width="77" height="20" uuid="4bd3cead-0b3e-4b68-8ef8-11766fe439f3"/>
+				<textFieldExpression><![CDATA[$F{nm_brg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="215" y="6" width="69" height="20" uuid="53e3c009-f276-4010-a328-e523a6fcf627"/>
+				<textFieldExpression><![CDATA[$F{diskon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="311" y="6" width="70" height="20" uuid="5feed278-c392-4578-80fe-54f8a8398f47"/>
+				<textFieldExpression><![CDATA[$F{hrg_jual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="6" width="62" height="20" uuid="d341d466-3068-4044-ab15-476d7275e358"/>
+				<textFieldExpression><![CDATA[$F{jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="501" y="6" width="54" height="20" uuid="8d541906-d0a8-42fd-a4dc-6ba5a1bc694e"/>
+				<textFieldExpression><![CDATA[$F{rusak}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="6" width="77" height="20" uuid="fa523c78-2a47-4a7a-944c-a3722a309c78"/>
+				<textFieldExpression><![CDATA[$F{kd_brg}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="44" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
